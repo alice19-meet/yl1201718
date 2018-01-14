@@ -23,7 +23,7 @@ ball1.goto(-100,-100)
 
 
 def check_collision(ball1,ball2):
-	if (ball1.shapesize()[0])+ball2.shapesize()[0]>(math.sqrt(math.pow(ball1.xcor()-ball2.ycor(),2)+(math.pow(ball1.ycor()-ball2.ycor(),2)))):
+	if (ball1.shapesize()[0])+ball2.shapesize()[0]>(math.sqrt(math.pow(ball1.xcor()-ball2.xcor(),2)+(math.pow(ball1.ycor()-ball2.ycor(),2)))):
 		print("collision")
 		turtle.write('collision')
 
