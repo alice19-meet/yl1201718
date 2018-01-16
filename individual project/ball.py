@@ -2,9 +2,9 @@ from turtle import *
 import random
 import math
 
-colormode (255)
-tracer(0)
-hideturtle()
+
+# tracer(0)
+# hideturtle()
 
 class Ball(Turtle):
 	def __init__(self,x,y,dx,dy,radius,color):
@@ -34,4 +34,16 @@ class Ball(Turtle):
 		bottom_edge=screen_height/2
 		self.goto(new_x,new_y)
 
-	if right_side_ball>
+		if right_side_ball> right_edge:
+			new_x=current_x - dx
+
+		elif left_side_ball<left_edge:
+			new_x=current_x + dx
+
+		elif top_side_ball>top_edge:
+			new_y=current_y- dy 
+
+		elif bottom_side_ball<bottom_edge:
+			new_y=current_y+dy
+
+
