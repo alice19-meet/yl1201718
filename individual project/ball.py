@@ -28,22 +28,22 @@ class Ball(Turtle):
 		left_side_ball=new_x-self.radius
 		top_side_ball=new_y+self.radius
 		bottom_side_ball=new_y-self.radius
-		right_edge=screen_width/2
-		left_edge=-screen_width/2
-		top_edge=screen_height/2
-		bottom_edge=screen_height/2
+		right_edge=screen_width
+		left_edge=-screen_width
+		top_edge=screen_height
+		bottom_edge=screen_height
 		self.goto(new_x,new_y)
 
 		if right_side_ball> right_edge:
-			new_x=current_x - dx
+			self.dx=- self.dx
 
 		elif left_side_ball<left_edge:
-			new_x=current_x + dx
+			self.dx = -self.dx
 
 		elif top_side_ball>top_edge:
-			new_y=current_y- dy 
+			self.dy= - self.dy 
 
 		elif bottom_side_ball<bottom_edge:
-			new_y=current_y+dy
+			self.dy= -self.dy
 
 
