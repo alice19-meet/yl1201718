@@ -3,7 +3,7 @@ import random
 import math
 
 
-# tracer(0)
+#tracer(0)
 # hideturtle()
 
 class Ball(Turtle):
@@ -31,7 +31,7 @@ class Ball(Turtle):
 		right_edge=screen_width
 		left_edge=-screen_width
 		top_edge=screen_height
-		bottom_edge=screen_height
+		bottom_edge=-screen_height
 		self.goto(new_x,new_y)
 
 		if right_side_ball> right_edge:
@@ -47,3 +47,7 @@ class Ball(Turtle):
 			self.dy= -self.dy
 
 
+#ball_1=Ball(0,0,5,10,30,"blue")
+#for i in range(50):
+	#ball_1.move(200,200)
+	#getscreen().update()
